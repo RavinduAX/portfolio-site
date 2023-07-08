@@ -16,8 +16,8 @@
   /* border: 1px solid red; */
 }
 
-html{
-   scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -106,35 +106,35 @@ html{
   align-items: center;
 }
 
-.circle:hover{
-   background-color: var(--dark-blue);
-   transition: background-color 0.75s;
+.circle:hover {
+  background-color: var(--dark-blue);
+  transition: background-color 0.75s;
 }
 
 /* navbar */
-#nav-bar .navbar{
-   background: var(--dark-black);
-   border-bottom: 3px solid var(--dark-blue);
+#nav-bar .navbar {
+  background: var(--dark-black);
+  border-bottom: 3px solid var(--dark-blue);
 }
 
-#nav-bar .navbar-nav>a{
-   color: white;
-   text-transform: uppercase;
+#nav-bar .navbar-nav > a {
+  color: white;
+  text-transform: uppercase;
 }
 
-#nav-bar .navbar-nav>a:hover{
-   color: var(--info);
-   transition: color 0.75s;
+#nav-bar .navbar-nav > a:hover {
+  color: var(--info);
+  transition: color 0.75s;
 }
 
 /* #nav-bar .navbar-nav>a:active{
    color: var(--info);
 } */
 
-#nav-bar .navbar-nav>a:focus{
-   color: var(--info);
+#nav-bar .navbar-nav > a:focus {
+  color: var(--info);
 }
 
-.navbar>.container{
-   justify-content: end;
+.navbar > .container {
+  justify-content: end;
 }
