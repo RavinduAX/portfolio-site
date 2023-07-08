@@ -30,59 +30,78 @@
   background: #444649;
 }
 
-.button{
-   margin: 0 auto;
-   width: max-content;
-   border: 2px solid white;
-   padding: 12px 20px;
-
+.button {
+  margin: 0 auto;
+  width: max-content;
+  border: 2px solid white;
+  padding: 12px 20px;
 }
 
-.custom-btn{
-   text-decoration: none;
+.custom-btn {
+  text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 21px;
 }
 
 /* hero section */
-#hero-sec{
-   width: 100vw;
-   height: 100vh;
-   position: relative;
-   display: grid;
-   place-items: center;
-   background: black;
+#hero-sec {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: black;
 }
 
-#hero-sec>div{
-   position: absolute;
+#hero-sec > div {
+  position: absolute;
 }
 
-#hero-sec .text h1{
-  margin-bottom: 20px;
+#hero-sec .text h1 {
+  margin-bottom: 48px;
   font-size: 43px;
   text-align: center;
   color: white;
 }
 
-#hero-sec .text h1 span{
-   color: var(--info);
+#hero-sec .text h1 span {
+  color: var(--info);
 }
 
-#hero-sec .button{
-   padding: 0 12px;
+#hero-sec .button {
+  padding: 0 12px;
 }
 
-#hero-sec .button:hover{
-   background-color: var(--light-blue);
-   border: 2px solid var(--light-blue);
-   transition: 0.75s;
-} 
+#hero-sec .button:hover {
+  background-color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  transition: 0.75s;
+}
 
 #hero-sec .button:hover i {
-   transform: rotate(90deg);
-   transition: 0.25s;
+  transform: rotate(90deg);
+  transition: 0.25s;
 }
 
+#hero-sec .social-div {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+}
 
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover{
+   background-color: var(--dark-blue);
+   transition: background-color 0.75s;
+}
