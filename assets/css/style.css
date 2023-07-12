@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.padding-div{
+.padding-div {
   padding: 100px 0 130px 0;
 }
 
@@ -38,7 +38,7 @@ html {
   background: #444649;
 }
 
-.title-div{
+.title-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ html {
   font-size: 21px;
 }
 
-.lead{
+.lead {
   line-height: 28px;
 }
 
@@ -154,7 +154,7 @@ html {
 }
 
 /* about section */
-#about-sec .skills h6{
+#about-sec .skills h6 {
   padding: 6px 12px;
   display: inline-block;
   margin: 0 12px 12px 12px;
@@ -164,6 +164,45 @@ html {
   cursor: default;
 }
 
-#about-sec .underline{
+#about-sec .underline {
   margin-bottom: 25px;
+}
+
+/* project section */
+#project-sec {
+  background-color: #f5f5f5;
+}
+#project-sec .project-div {
+  width: 390px;
+  height: 300px;
+}
+#project-sec .project-div img {
+  width: 390px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* contact */
+#contact-sec {
+  background-color: var(--black);
+}
+#contact-sec .title-div h1 {
+  color: white;
+}
+#contact-sec .title-div div {
+  background-color: white;
+}
+#contact-sec .underline{
+  margin-bottom: 40px;
+}
+#contact-sec .lead{
+  color: var(--light-blue);
+}
+#contact-sec .contact-div2 a{
+  text-decoration: none;
+  color: white;
+  margin: 0 12px 0 12px;
+  font-size: xx-large;
 }
