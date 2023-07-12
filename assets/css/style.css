@@ -199,10 +199,17 @@ html {
 }
 #contact-sec .lead{
   color: var(--light-blue);
+  margin-bottom: 60px;
+}
+#contact-sec .contact-div1 a{
+  text-decoration: none;
+  color: white;
+  margin: 0 12px 0 12px;
+  font-size: large;
 }
 #contact-sec .contact-div2 a{
   text-decoration: none;
   color: white;
   margin: 0 12px 0 12px;
-  font-size: xx-large;
+  font-size: x-large;
 }
