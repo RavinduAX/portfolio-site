@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.padding-div{
+  padding: 100px 0 130px 0;
+}
+
 .title {
   font-size: 40px;
   text-transform: uppercase;
@@ -34,6 +38,12 @@ html {
   background: #444649;
 }
 
+.title-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .button {
   margin: 0 auto;
   width: max-content;
@@ -46,6 +56,10 @@ html {
   color: white;
   font-weight: 500;
   font-size: 21px;
+}
+
+.lead{
+  line-height: 28px;
 }
 
 /* hero section */
