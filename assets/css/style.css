@@ -217,5 +217,6 @@ html {
 /* footer */
 #footer-sec{
   background-color: var(--dark-black);
-  color: #d7d7d7;
+  color: hsl(0, 1%, 65%);
+  font-size: small;
 }
