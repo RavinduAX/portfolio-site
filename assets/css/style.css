@@ -375,7 +375,7 @@ html {
 }
 
 .leftToRight{
-  transform: translateX(-150px);
+  transform: translateX(-95px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -385,7 +385,7 @@ html {
 }
 
 .rightToLeft{
-  transform: translateX(150px);
+  transform: translateX(95px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -405,12 +405,12 @@ html {
 
 .scaleUp{
   transform: scale(0);
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1s all ease;
 }
 .scaleUp.active{
   transform: scale(1);
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 
