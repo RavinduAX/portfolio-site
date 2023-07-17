@@ -129,6 +129,7 @@ html {
 #nav-bar {
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 #nav-bar .navbar {
@@ -203,10 +204,17 @@ html {
 
 #project-sec .intro-div-bottom button {
   border: 3px solid #e31b6d;
+  background-color: white;
   padding: 7px 21px;
   margin: 0 auto;
   position: relative;
   z-index: 22;
+
+}
+#project-sec .intro-div-bottom button:hover {
+  background-color: #e31b6d;
+  color: white;
+  transition: 0.35s;
 }
 
 /* contact */
@@ -289,5 +297,43 @@ html {
   }
 }
 
-.project-box > div:nth-child(1):hover {
+
+/* Project transitions */
+#project-sec .project-div{
+  background: white;
 }
+#project-sec .project-div img{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover img{
+  opacity: 0;
+}
+#project-sec .project-div:hover .project-intro-div{
+  z-index: 3!important;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div .intro-div-up{
+  transform: translateY(-60px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover .intro-div-up{
+  transform: translateY(30px);
+  opacity: 1;
+}
+
+#project-sec .project-div .intro-div-bottom{
+  transform: translateY(60px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover .intro-div-bottom{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
