@@ -255,7 +255,7 @@ html {
 }
 
 /* ANIMATIONS & TRANSITIOINS */
-#about-sec .title,
+/* #about-sec .title,
 #contact-sec .title {
   animation-name: titleLeftToRight;
   animation-duration: 1.25s;
@@ -295,7 +295,7 @@ html {
   to {
     left: 0vh;
   }
-}
+} */
 
 
 /* Project transitions */
@@ -336,4 +336,81 @@ html {
   transform: translateY(10px);
   opacity: 1;
 }
+
+
+/* SCROLL ANIMATIONS */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.25s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.reveal1{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.reveal1.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.reveal2{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.75s all ease;
+}
+.reveal2.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.leftToRight{
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.leftToRight.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.rightToLeft{
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.rightToLeft.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.fadeIn{
+  opacity: 0;
+  transition: 1s all ease;
+}
+.fadeIn.active{
+  opacity: 1;
+}
+
+.scaleUp{
+  transform: scale(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.scaleUp.active{
+  transform: scale(1);
+  opacity: 1;
+}
+
 
