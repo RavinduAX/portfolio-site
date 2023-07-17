@@ -126,6 +126,12 @@ html {
 }
 
 /* navbar */
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 #nav-bar .navbar {
   background: var(--dark-black);
   border-bottom: 3px solid var(--dark-blue);
@@ -184,6 +190,33 @@ html {
   background-size: cover;
 }
 
+#project-sec .intro-div-up > h5 {
+  font-size: 24px;
+  color: #1b242f;
+  font-weight: bold;
+}
+
+#project-sec .intro-div-up > h6 {
+  font-size: 18px;
+  color: #e31b6d;
+  font-weight: 500;
+}
+
+#project-sec .intro-div-bottom button {
+  border: 3px solid #e31b6d;
+  background-color: white;
+  padding: 7px 21px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 22;
+
+}
+#project-sec .intro-div-bottom button:hover {
+  background-color: #e31b6d;
+  color: white;
+  transition: 0.35s;
+}
+
 /* contact */
 #contact-sec {
   background-color: var(--black);
@@ -194,20 +227,20 @@ html {
 #contact-sec .title-div div {
   background-color: white;
 }
-#contact-sec .underline{
+#contact-sec .underline {
   margin-bottom: 40px;
 }
-#contact-sec .lead{
+#contact-sec .lead {
   color: var(--light-blue);
   margin-bottom: 60px;
 }
-#contact-sec .contact-div1 a{
+#contact-sec .contact-div1 a {
   text-decoration: none;
   color: white;
   margin: 0 12px 0 12px;
   font-size: large;
 }
-#contact-sec .contact-div2 a{
+#contact-sec .contact-div2 a {
   text-decoration: none;
   color: white;
   margin: 0 12px 0 12px;
@@ -215,8 +248,92 @@ html {
 }
 
 /* footer */
-#footer-sec{
+#footer-sec {
   background-color: var(--dark-black);
   color: hsl(0, 1%, 65%);
   font-size: small;
 }
+
+/* ANIMATIONS & TRANSITIOINS */
+#about-sec .title,
+#contact-sec .title {
+  animation-name: titleLeftToRight;
+  animation-duration: 1.25s;
+  position: relative;
+}
+#about-sec .underline,
+#contact-sec .underline {
+  animation-name: titleLeftToRight;
+  animation-duration: 2.75s;
+  position: relative;
+}
+
+@keyframes titleLeftToRight {
+  from {
+    left: -50vh;
+  }
+  to {
+    left: 0vh;
+  }
+}
+
+#project-sec .title {
+  animation-name: titleRightToLeft;
+  animation-duration: 1.25s;
+  position: relative;
+}
+#project-sec .underline {
+  animation-name: titleRightToLeft;
+  animation-duration: 2.75s;
+  position: relative;
+}
+
+@keyframes titleRightToLeft {
+  from {
+    left: +50vh;
+  }
+  to {
+    left: 0vh;
+  }
+}
+
+
+/* Project transitions */
+#project-sec .project-div{
+  background: white;
+}
+#project-sec .project-div img{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover img{
+  opacity: 0;
+}
+#project-sec .project-div:hover .project-intro-div{
+  z-index: 3!important;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div .intro-div-up{
+  transform: translateY(-60px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover .intro-div-up{
+  transform: translateY(30px);
+  opacity: 1;
+}
+
+#project-sec .project-div .intro-div-bottom{
+  transform: translateY(60px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#project-sec .project-div:hover .intro-div-bottom{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
